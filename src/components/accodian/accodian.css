@@ -1,0 +1,41 @@
+/* Accordion.css */
+
+.accordion {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .accordion-item {
+    border: 1px solid #ddd;
+    margin-bottom: 8px;
+  }
+  
+  .accordion-input {
+    display: none;
+  }
+  
+  .accordion-header {
+    display: block;
+    padding: 10px;
+    background-color: #f8f8f8;
+    cursor: pointer;
+  }
+  
+  .accordion-content {
+    display: none;
+    padding: 10px;
+  }
+  
+  .accordion-input:checked + .accordion-header + .accordion-content {
+    display: block;
+  }
+  /* Accordion.css */
+
+.accordion-content {
+    display: none;
+  }
+  
+  .accordion-content.open {
+    display: block;
+  }
+  

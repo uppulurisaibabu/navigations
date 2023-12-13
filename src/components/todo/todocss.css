@@ -1,0 +1,33 @@
+
+/* Custom CSS for TodoApp component */
+
+.container {
+  margin-top: 50px;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.input-group {
+  margin-bottom: 1.5rem;
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.btn-danger {
+  margin-left: 1rem;
+}
+.row{
+    margin-left: -261px;
+}
+.btn-primary{
+    margin-left: 6px;
+    padding-right: 15px;
+
+}

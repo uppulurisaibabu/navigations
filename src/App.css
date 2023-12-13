@@ -36,3 +36,37 @@
     transform: rotate(360deg);
   }
 }
+/* App.css */
+.app-container {
+  display: flex;
+  background-color: #f8f9fa;
+}
+
+.sidebar {
+  background-color: #ffffff;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-link {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.sidebar-link:hover {
+  text-decoration: underline;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}

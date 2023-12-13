@@ -1,0 +1,33 @@
+/* UserList.css */
+.user-list {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .custom-table th,
+  .custom-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    cursor: pointer;
+  }
+  
+  .custom-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .pagination {
+    margin-top: 10px;
+  }
+  
+  .pagination button {
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
