@@ -1,54 +1,50 @@
-.alighn {
-    /* padding-left: 190px;  */
-    
-    background-color: aqua
-  
+.header {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  padding: 10px 20px;
+  background-color: #003b58;
+  color: white;
+  position: sticky; /* Fix the header position */
+  top: 0;
+  z-index: 2;
 }
 .img{
-   /* display: flex;
-   justify-content: left; */
-   font-size: 10px;
-   font-style: normal;
-   width: 190px;
-   
+  height:30px;
+  
 }
-/* UserAccount.css */
-.user-account {
-    position: relative;
-    display: inline-block;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end; /* Align to the end of the container */
-    order: 1;
-    padding-right: 50px ;
-    font-size: 33px;
-  }
-  .user-account span {
-    font-size: 40px; /* Adjust the font size as needed */
-  }  
-  .dropdown-menu {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    display: block;
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    padding: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+.profile {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.pf{
+ position: absolute;
+ right:60px;
+}
+.profile-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 10%;
   
-  .dropdown-menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .dropdown-menu li {
-    padding: 8px;
-    cursor: pointer;
-  }
-  
-  .dropdown-menu li:hover {
-    background-color: #f5f5f5;
-  }
-  
+}
+
+.dropdown-content {
+  display: block;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}

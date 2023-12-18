@@ -70,3 +70,20 @@
   flex-grow: 1;
   padding: 20px;
 }
+.sidebar {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color:white;
+  background-color: #111;
+  padding-top: 80px;
+  transition: all 0.3s ease;  /* Adjust padding to prevent overlap with header */
+  z-index: 1;
+}
+
+.sidebar.closed {
+  width: 60px; /* Adjust the width when closed */
+  overflow: hidden; /* Hide the content when closed */
+}

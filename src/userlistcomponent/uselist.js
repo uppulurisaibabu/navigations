@@ -1,7 +1,7 @@
 // usersData.js
 const usersData = [
   {
-    "id": "1",
+    "id": 1,
     "name": "jansaida Shaik",
     "username": "jansaida",
     "email": "jansaida@gmail.com",
@@ -10,7 +10,7 @@ const usersData = [
     "status": "Active"
   },
   {
-    "id": "2",
+    "id": 2,
     "name": "saibabu uppuluri ",
     "username": "saibabu",
     "email": "sai@gmail.com",
@@ -19,7 +19,7 @@ const usersData = [
     "status": "Active"
   },
   {
-    "id": "3",
+    "id": 3,
     "name": "prasanna",
     "username": "prasanna",
     "email": "prasanna@gmail.com",
@@ -28,7 +28,7 @@ const usersData = [
     "status": "Active"
   },
   {
-    "id": "4",
+    "id": 4,
     "name": "manikanta",
     "username": "mani",
     "email": "mani@gmail.com",
@@ -37,7 +37,7 @@ const usersData = [
     "status": "Active"
   },
   {
-    "id": "5",
+    "id": 5,
     "name": "venkat kumar",
     "username": "venkat",
     "email": "venkat@gmail.com",
@@ -46,7 +46,7 @@ const usersData = [
     "status": "Active"
   },
   {
-    "id": "6",
+    "id": 6,
     "name": "sai kumar",
     "username": "venkat",
     "email": "saikumar@gmail.com",
@@ -55,7 +55,7 @@ const usersData = [
     "status": "Active"
   },
   {
-    "id": "7",
+    "id": 7,
     "name": "srinivasu",
     "username": "sri",
     "email": "sri@gmail.com",
@@ -64,7 +64,7 @@ const usersData = [
     "status": "Active"
   },
   {
-    "id": "8",
+    "id": 8,
     "name": "giri kumar",
     "username": "giri",
     "email": "giri@gmail.com",

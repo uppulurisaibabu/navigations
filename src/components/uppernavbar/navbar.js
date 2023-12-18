@@ -1,45 +1,42 @@
 import React, { useState } from 'react';
 import './nav.css'; 
 // import 'bootstrap/dist/css/bootstrap.min.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser } from '@fortawesome/free-solid-svg-icons';
+import Logo from './logo.png';
+import icon from './image-icon.jpg'
 
 
 const Navbar = () => {
-  const [isDropdownOpen, setDropdownOpen] = useState(false);
-
-  const toggleDropdown = () => {
-    setDropdownOpen(!isDropdownOpen);
-  };
-
-  const closeDropdown = () => {
-    setDropdownOpen(false);
-  };
-  return (
-    <div>
-    
-    {/* <img className="img" src='https://www.titanisu.com/images/logo.png' /> */}
-    <div className="alighn">
-      
-    <img className="img" src='https://www.titanisu.com/images/logo.png' alt="jsjsj" />
-    <div className="user-account" onClick={toggleDropdown} onBlur={closeDropdown} tabIndex="0">
-      <FontAwesomeIcon icon={faUser} />
-      {isDropdownOpen && (
-        <div className="dropdown-menu">
-          <ul>
-            <li>Profile Settings</li>
-            <li>Logout</li>
-            <li>Edit Profile Details</li>
-          </ul>
+  
+    const [isDropdownOpen, setDropdownOpen] = useState(false);
+  
+    const toggleDropdown = () => {
+      setDropdownOpen(!isDropdownOpen);
+    };
+  
+    const handleLogout = () => {
+      // Perform logout logic here
+      alert('Logout clicked');
+    };
+  
+    return (
+      <header className="header">
+        <img src={Logo} className="img" alt="logo" />
+        <div className='pf'>
+        <div className="profile" onClick={toggleDropdown}>
+        
+          <img src={icon} alt="Profile Icon" className="profile-icon" />
+          {isDropdownOpen && (
+            <div className="dropdown-content">
+              <a href="#">Profile</a>
+              <a href="#">Settings</a>
+              <a href="#" onClick={handleLogout}>Logout</a>
+            </div>
+          )}
         </div>
-      )}
-    </div>
-    
-   
-    </div>
-  </div>
+        </div>
+      </header>
+    );
+  };
 
-  )
-}
 
-export default Navbar
+export default Navbar;

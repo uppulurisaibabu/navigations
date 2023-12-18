@@ -7,6 +7,7 @@ import Accodian from './components/accodian/accodian';
 import Bmi from './components/bmicalculator/bmi';
 import Userlist from './components/alluserlist/alluserlist' ;
 import usersData from './userlistcomponent/uselist';
+
 import './App.css'
 
 const App = () => {
@@ -14,11 +15,11 @@ const App = () => {
    
       <Router>
         
-        {/* <img src='https://www.titanisu.com/images/logo.png' /> */}
+       
         <Task2 />
       
-      <div className="d-flex bg-light p-3">
-        <div className="bg-light p-4" style={{ width: '300px' }}>
+      <div className="d-flex bg-light p-3 ">
+        <div className="bg-black p-4" style={{ width: '300px' }}>
           
           <ul className="list-unstyled ">
             <li>
@@ -34,7 +35,8 @@ const App = () => {
               <Link to="/userslist" className="text-decoration-none text-blue">Users List Component</Link>
             </li>
             
-      
+           
+            
           </ul>
         </div>
         <div className="flex-grow-1 p-4">
@@ -44,9 +46,11 @@ const App = () => {
             <Route path="/accodian" element={<Accodian />} />
             <Route path="/bmi" element={<Bmi />} />
             <Route path="/userslist" element={<Userlist  users={usersData}/>} />
+           
           </Routes>
         </div>
       </div>
+      
       
     </Router>
   );
